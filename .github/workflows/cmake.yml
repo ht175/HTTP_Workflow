@@ -1,1 +1,50 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y cmake g++ gcc valgrind
+        sudo apt-get install -y libssl-dev libxerces-c-dev libpqxx-dev
+         # Install Google Test
+        sudo apt-get install -y libgtest-dev
+        # Compile and install Google Test
+        cd /usr/src/gtest
+        sudo cmake CMakeLists.txt
+        sudo make
+        # Copy or symlink libgtest.a and libgtest_main.a to your /usr/lib directory
+        sudo cp *.a /usr/lib
+        # Install Google Test
+        sudo apt-get install -y libgtest-dev
+        # Compile and install Google Test
+        cd /usr/src/gtest
+        sudo cmake CMakeLists.txt
+        sudo make
+        # Copy or symlink libgtest.a and libgtest_main.a to your /usr/lib directory
+        sudo cp *.a /usr/lib
+
+    - name: Create Build directory
+      run: mkdir -p build
+
+    - name: Configure CMake
+      run: cmake -S . -B build
+
+    - name: Build
+      run: cmake --build build
+
+    - name: Test
+      run: cd build && ctest
 
