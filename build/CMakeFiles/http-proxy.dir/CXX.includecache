@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/exception.h
+string
+-
+iostream
+-
+exception
+-
+
+../include/request.h
+string
+-
+exception.h
+../include/exception.h
+sstream
+-
+
+/home/ht175/HTTP_Workflow/src/request.cpp
+request.h
+/home/ht175/HTTP_Workflow/src/request.h
+
