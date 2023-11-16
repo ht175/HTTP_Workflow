@@ -29,8 +29,10 @@ jobs:
         sudo cp ./lib/libgtest*.a /usr/lib
        
 
-    - name: Create Build directory
-      run: mkdir -p build
+    - name: Prepare Build directory
+      run: |
+        rm -rf build
+        mkdir -p build
 
     - name: Configure CMake
       run: cmake -S . -B build
