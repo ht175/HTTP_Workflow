@@ -55,5 +55,5 @@ jobs:
       if: success()
       with:
         name: build_artifacts
-        path: ${{runner.workspace}}/build/
+        path: build
 
