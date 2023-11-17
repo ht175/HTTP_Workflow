@@ -14,7 +14,7 @@ TEST(DateTimeTest, DefaultConstructor) {
 }
 
 // Test the constructor with a valid HTTP date string
-TEST(DateTimeTest, ConstructorWithValidHttpDate) {
+TEST(DateTimeTest, ConstructorWithPattern1) {
     std::string http_date = "Sun, 06 Nov 1994 08:49:37 GMT";
     DateTime dt(http_date);
     std::string result = dt.toString();
@@ -29,16 +29,16 @@ TEST(DateTimeTest, ConstructorWithInvalidHttpDate) {
 }
 
 // Test parsing a valid HTTP date string
-TEST(DateTimeTest, ParseValidHttpDate) {
-    std::string http_date = "Fri, 05 Mar 2021 09:26:53 GMT";
+TEST(DateTimeTest, ConstructorWithPattern2) {
+    std::string http_date = "Sunday, 06-Nov-94 08:49:37 GMT";
     DateTime dt(http_date);
     
     std::string result = dt.toString();
-    EXPECT_EQ(result, "Fri Mar 5 09:26:53 2021\n");
+    EXPECT_EQ(result, "Sun Nov 6 08:49:37 1994\n");
     // You can add more checks here to validate the parsed time
 }
 
-TEST(DateTimeTest, ParseValidHttpDate) {
+TEST(DateTimeTest, ConstructorWithPattern3) {
     std::string http_date = "Sun Nov  6 08:49:37 1994";
     DateTime dt(http_date);
     
@@ -47,11 +47,6 @@ TEST(DateTimeTest, ParseValidHttpDate) {
     // You can add more checks here to validate the parsed time
 }
 
-// Test parsing an invalid HTTP date string
-TEST(DateTimeTest, ParseInvalidHttpDate) {
-    DateTime dt;
-    std::string http_date = "Invalid Date";
-    EXPECT_THROW(dt.parseTime(http_date), DateTimeException);
-}
+
 
 
