@@ -42,4 +42,18 @@ jobs:
 
     - name: Test
       run: cd build && ctest
+      
+    - name: Upload test results on failure
+      uses: actions/upload-artifact@v2
+      if: failure()
+      with:
+        name: test_results_xml
+        path: ${{runner.workspace}}/build/test-results/**/*.xml
+
+    - name: Upload build artifacts on success
+      uses: actions/upload-artifact@v2
+      if: success()
+      with:
+        name: build_artifacts
+        path: ${{runner.workspace}}/build/
 
