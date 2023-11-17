@@ -23,11 +23,13 @@ set(APP_SRC
   ${CMAKE_CURRENT_SOURCE_DIR}/src/clientConnection.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/src/server.cpp
   ${CMAKE_CURRENT_SOURCE_DIR}/src/request.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/src/dateTime.cpp
 )
 
 # Create a list of source files for the tests.
 set(TEST_SRC
   ${CMAKE_CURRENT_SOURCE_DIR}/test/test_request.cpp
+  ${CMAKE_CURRENT_SOURCE_DIR}/test/test_date.cpp
 )
 
 add_executable(http-proxy 
