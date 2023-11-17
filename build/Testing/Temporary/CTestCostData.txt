@@ -1,6 +1,11 @@
-RequestTest.ParseHostAndPort 2 0.00468892
-RequestTest.ParseHostWithoutPort 0 0
-RequestTest.ParseRequestLine 2 0.00312348
-RequestTest.ParseMethod 2 0.0033408
+RequestTest.ParseHostAndPort 6 0.000657082
+RequestTest.ParseHostWithoutPort 4 0.00199557
+RequestTest.ParseRequestLine 6 0.00125597
+RequestTest.ParseMethod 6 0.00119166
+DateTimeTest.DefaultConstructor 4 0.0018298
+DateTimeTest.ConstructorWithPattern1 1 0.0110116
+DateTimeTest.ConstructorWithInvalidHttpDate 4 0.00284094
+DateTimeTest.ConstructorWithPattern2 1 0.011024
+DateTimeTest.ConstructorWithPattern3 0 0
 ---
-RequestTest.ParseHostWithoutPort
+DateTimeTest.ConstructorWithPattern3

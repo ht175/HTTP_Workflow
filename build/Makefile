@@ -197,6 +197,24 @@ src/clientConnection.s:
 .PHONY : src/clientConnection.s
 
 # target to build an object file
+src/dateTime.o:
+	$(MAKE) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/dateTime.o
+	$(MAKE) -f CMakeFiles/http-proxy.dir/build.make CMakeFiles/http-proxy.dir/src/dateTime.o
+.PHONY : src/dateTime.o
+
+# target to preprocess a source file
+src/dateTime.i:
+	$(MAKE) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/dateTime.i
+	$(MAKE) -f CMakeFiles/http-proxy.dir/build.make CMakeFiles/http-proxy.dir/src/dateTime.i
+.PHONY : src/dateTime.i
+
+# target to generate assembly for a file
+src/dateTime.s:
+	$(MAKE) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/src/dateTime.s
+	$(MAKE) -f CMakeFiles/http-proxy.dir/build.make CMakeFiles/http-proxy.dir/src/dateTime.s
+.PHONY : src/dateTime.s
+
+# target to build an object file
 src/main.o:
 	$(MAKE) -f CMakeFiles/http-proxy.dir/build.make CMakeFiles/http-proxy.dir/src/main.o
 .PHONY : src/main.o
@@ -263,6 +281,21 @@ test/main.s:
 .PHONY : test/main.s
 
 # target to build an object file
+test/test_date.o:
+	$(MAKE) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/test/test_date.o
+.PHONY : test/test_date.o
+
+# target to preprocess a source file
+test/test_date.i:
+	$(MAKE) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/test/test_date.i
+.PHONY : test/test_date.i
+
+# target to generate assembly for a file
+test/test_date.s:
+	$(MAKE) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/test/test_date.s
+.PHONY : test/test_date.s
+
+# target to build an object file
 test/test_request.o:
 	$(MAKE) -f CMakeFiles/unit_tests.dir/build.make CMakeFiles/unit_tests.dir/test/test_request.o
 .PHONY : test/test_request.o
@@ -295,6 +328,9 @@ help:
 	@echo "... src/clientConnection.o"
 	@echo "... src/clientConnection.i"
 	@echo "... src/clientConnection.s"
+	@echo "... src/dateTime.o"
+	@echo "... src/dateTime.i"
+	@echo "... src/dateTime.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
@@ -307,6 +343,9 @@ help:
 	@echo "... test/main.o"
 	@echo "... test/main.i"
 	@echo "... test/main.s"
+	@echo "... test/test_date.o"
+	@echo "... test/test_date.i"
+	@echo "... test/test_date.s"
 	@echo "... test/test_request.o"
 	@echo "... test/test_request.i"
 	@echo "... test/test_request.s"

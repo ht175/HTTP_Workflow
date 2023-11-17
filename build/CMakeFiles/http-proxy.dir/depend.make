@@ -8,6 +8,10 @@ CMakeFiles/http-proxy.dir/src/client.o: ../src/client.cpp
 CMakeFiles/http-proxy.dir/src/clientConnection.o: ../include/clientConnection.h
 CMakeFiles/http-proxy.dir/src/clientConnection.o: ../src/clientConnection.cpp
 
+CMakeFiles/http-proxy.dir/src/dateTime.o: ../include/dateTime.h
+CMakeFiles/http-proxy.dir/src/dateTime.o: ../include/exception.h
+CMakeFiles/http-proxy.dir/src/dateTime.o: ../src/dateTime.cpp
+
 CMakeFiles/http-proxy.dir/src/main.o: ../src/main.cpp
 
 CMakeFiles/http-proxy.dir/src/request.o: ../include/exception.h

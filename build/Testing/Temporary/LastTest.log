@@ -1,10 +1,10 @@
-Start testing: Nov 11 23:11 EST
+Start testing: Nov 16 22:32 EST
 ----------------------------------------------------------
-1/4 Testing: RequestTest.ParseHostAndPort
-1/4 Test: RequestTest.ParseHostAndPort
+1/9 Testing: RequestTest.ParseHostAndPort
+1/9 Test: RequestTest.ParseHostAndPort
 Command: "/home/ht175/HTTP_Workflow/build/unit_tests" "--gtest_filter=RequestTest.ParseHostAndPort" "--gtest_also_run_disabled_tests"
 Directory: /home/ht175/HTTP_Workflow/build
-"RequestTest.ParseHostAndPort" start time: Nov 11 23:11 EST
+"RequestTest.ParseHostAndPort" start time: Nov 16 22:32 EST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = RequestTest.ParseHostAndPort
@@ -19,18 +19,18 @@ Note: Google Test filter = RequestTest.ParseHostAndPort
 [==========] 1 test from 1 test suite ran. (0 ms total)
 [  PASSED  ] 1 test.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.00 sec
 ----------------------------------------------------------
 Test Passed.
-"RequestTest.ParseHostAndPort" end time: Nov 11 23:11 EST
+"RequestTest.ParseHostAndPort" end time: Nov 16 22:32 EST
 "RequestTest.ParseHostAndPort" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-2/4 Testing: RequestTest.ParseHostWithoutPort
-2/4 Test: RequestTest.ParseHostWithoutPort
+2/9 Testing: RequestTest.ParseHostWithoutPort
+2/9 Test: RequestTest.ParseHostWithoutPort
 Command: "/home/ht175/HTTP_Workflow/build/unit_tests" "--gtest_filter=RequestTest.ParseHostWithoutPort" "--gtest_also_run_disabled_tests"
 Directory: /home/ht175/HTTP_Workflow/build
-"RequestTest.ParseHostWithoutPort" start time: Nov 11 23:11 EST
+"RequestTest.ParseHostWithoutPort" start time: Nov 16 22:32 EST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = RequestTest.ParseHostWithoutPort
@@ -38,34 +38,25 @@ Note: Google Test filter = RequestTest.ParseHostWithoutPort
 [----------] Global test environment set-up.
 [----------] 1 test from RequestTest
 [ RUN      ] RequestTest.ParseHostWithoutPort
-/home/ht175/HTTP_Workflow/test/test_request.cpp:18: Failure
-Expected equality of these values:
-  "www.example.com"
-  req.getHost()
-    Which is: "\x16"
-80[  FAILED  ] RequestTest.ParseHostWithoutPort (0 ms)
+[       OK ] RequestTest.ParseHostWithoutPort (0 ms)
 [----------] 1 test from RequestTest (0 ms total)
 
 [----------] Global test environment tear-down
 [==========] 1 test from 1 test suite ran. (0 ms total)
-[  PASSED  ] 0 tests.
-[  FAILED  ] 1 test, listed below:
-[  FAILED  ] RequestTest.ParseHostWithoutPort
-
- 1 FAILED TEST
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.01 sec
 ----------------------------------------------------------
-Test Failed.
-"RequestTest.ParseHostWithoutPort" end time: Nov 11 23:11 EST
+Test Passed.
+"RequestTest.ParseHostWithoutPort" end time: Nov 16 22:32 EST
 "RequestTest.ParseHostWithoutPort" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-3/4 Testing: RequestTest.ParseRequestLine
-3/4 Test: RequestTest.ParseRequestLine
+3/9 Testing: RequestTest.ParseRequestLine
+3/9 Test: RequestTest.ParseRequestLine
 Command: "/home/ht175/HTTP_Workflow/build/unit_tests" "--gtest_filter=RequestTest.ParseRequestLine" "--gtest_also_run_disabled_tests"
 Directory: /home/ht175/HTTP_Workflow/build
-"RequestTest.ParseRequestLine" start time: Nov 11 23:11 EST
+"RequestTest.ParseRequestLine" start time: Nov 16 22:32 EST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = RequestTest.ParseRequestLine
@@ -83,15 +74,15 @@ Note: Google Test filter = RequestTest.ParseRequestLine
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"RequestTest.ParseRequestLine" end time: Nov 11 23:11 EST
+"RequestTest.ParseRequestLine" end time: Nov 16 22:32 EST
 "RequestTest.ParseRequestLine" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-4/4 Testing: RequestTest.ParseMethod
-4/4 Test: RequestTest.ParseMethod
+4/9 Testing: RequestTest.ParseMethod
+4/9 Test: RequestTest.ParseMethod
 Command: "/home/ht175/HTTP_Workflow/build/unit_tests" "--gtest_filter=RequestTest.ParseMethod" "--gtest_also_run_disabled_tests"
 Directory: /home/ht175/HTTP_Workflow/build
-"RequestTest.ParseMethod" start time: Nov 11 23:11 EST
+"RequestTest.ParseMethod" start time: Nov 16 22:32 EST
 Output:
 ----------------------------------------------------------
 Note: Google Test filter = RequestTest.ParseMethod
@@ -109,8 +100,147 @@ Note: Google Test filter = RequestTest.ParseMethod
 Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"RequestTest.ParseMethod" end time: Nov 11 23:11 EST
+"RequestTest.ParseMethod" end time: Nov 16 22:32 EST
 "RequestTest.ParseMethod" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Nov 11 23:11 EST
+5/9 Testing: DateTimeTest.DefaultConstructor
+5/9 Test: DateTimeTest.DefaultConstructor
+Command: "/home/ht175/HTTP_Workflow/build/unit_tests" "--gtest_filter=DateTimeTest.DefaultConstructor" "--gtest_also_run_disabled_tests"
+Directory: /home/ht175/HTTP_Workflow/build
+"DateTimeTest.DefaultConstructor" start time: Nov 16 22:32 EST
+Output:
+----------------------------------------------------------
+Note: Google Test filter = DateTimeTest.DefaultConstructor
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateTimeTest
+[ RUN      ] DateTimeTest.DefaultConstructor
+[       OK ] DateTimeTest.DefaultConstructor (0 ms)
+[----------] 1 test from DateTimeTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"DateTimeTest.DefaultConstructor" end time: Nov 16 22:32 EST
+"DateTimeTest.DefaultConstructor" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/9 Testing: DateTimeTest.ConstructorWithPattern1
+6/9 Test: DateTimeTest.ConstructorWithPattern1
+Command: "/home/ht175/HTTP_Workflow/build/unit_tests" "--gtest_filter=DateTimeTest.ConstructorWithPattern1" "--gtest_also_run_disabled_tests"
+Directory: /home/ht175/HTTP_Workflow/build
+"DateTimeTest.ConstructorWithPattern1" start time: Nov 16 22:32 EST
+Output:
+----------------------------------------------------------
+Note: Google Test filter = DateTimeTest.ConstructorWithPattern1
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateTimeTest
+[ RUN      ] DateTimeTest.ConstructorWithPattern1
+[       OK ] DateTimeTest.ConstructorWithPattern1 (4 ms)
+[----------] 1 test from DateTimeTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"DateTimeTest.ConstructorWithPattern1" end time: Nov 16 22:32 EST
+"DateTimeTest.ConstructorWithPattern1" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/9 Testing: DateTimeTest.ConstructorWithInvalidHttpDate
+7/9 Test: DateTimeTest.ConstructorWithInvalidHttpDate
+Command: "/home/ht175/HTTP_Workflow/build/unit_tests" "--gtest_filter=DateTimeTest.ConstructorWithInvalidHttpDate" "--gtest_also_run_disabled_tests"
+Directory: /home/ht175/HTTP_Workflow/build
+"DateTimeTest.ConstructorWithInvalidHttpDate" start time: Nov 16 22:32 EST
+Output:
+----------------------------------------------------------
+Note: Google Test filter = DateTimeTest.ConstructorWithInvalidHttpDate
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateTimeTest
+[ RUN      ] DateTimeTest.ConstructorWithInvalidHttpDate
+[       OK ] DateTimeTest.ConstructorWithInvalidHttpDate (4 ms)
+[----------] 1 test from DateTimeTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"DateTimeTest.ConstructorWithInvalidHttpDate" end time: Nov 16 22:32 EST
+"DateTimeTest.ConstructorWithInvalidHttpDate" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/9 Testing: DateTimeTest.ConstructorWithPattern2
+8/9 Test: DateTimeTest.ConstructorWithPattern2
+Command: "/home/ht175/HTTP_Workflow/build/unit_tests" "--gtest_filter=DateTimeTest.ConstructorWithPattern2" "--gtest_also_run_disabled_tests"
+Directory: /home/ht175/HTTP_Workflow/build
+"DateTimeTest.ConstructorWithPattern2" start time: Nov 16 22:32 EST
+Output:
+----------------------------------------------------------
+Note: Google Test filter = DateTimeTest.ConstructorWithPattern2
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateTimeTest
+[ RUN      ] DateTimeTest.ConstructorWithPattern2
+[       OK ] DateTimeTest.ConstructorWithPattern2 (3 ms)
+[----------] 1 test from DateTimeTest (3 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (4 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"DateTimeTest.ConstructorWithPattern2" end time: Nov 16 22:32 EST
+"DateTimeTest.ConstructorWithPattern2" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/9 Testing: DateTimeTest.ConstructorWithPattern3
+9/9 Test: DateTimeTest.ConstructorWithPattern3
+Command: "/home/ht175/HTTP_Workflow/build/unit_tests" "--gtest_filter=DateTimeTest.ConstructorWithPattern3" "--gtest_also_run_disabled_tests"
+Directory: /home/ht175/HTTP_Workflow/build
+"DateTimeTest.ConstructorWithPattern3" start time: Nov 16 22:32 EST
+Output:
+----------------------------------------------------------
+Note: Google Test filter = DateTimeTest.ConstructorWithPattern3
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from DateTimeTest
+[ RUN      ] DateTimeTest.ConstructorWithPattern3
+/home/ht175/HTTP_Workflow/test/test_date.cpp:46: Failure
+Expected equality of these values:
+  result
+    Which is: "Sat Jan 28 02:00:00 1995\n"
+  "Sun Nov  6 08:49:37 1994\n"
+[  FAILED  ] DateTimeTest.ConstructorWithPattern3 (4 ms)
+[----------] 1 test from DateTimeTest (4 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (5 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] DateTimeTest.ConstructorWithPattern3
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Failed.
+"DateTimeTest.ConstructorWithPattern3" end time: Nov 16 22:32 EST
+"DateTimeTest.ConstructorWithPattern3" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 16 22:32 EST

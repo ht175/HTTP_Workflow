@@ -6,6 +6,22 @@
 
 #IncludeRegexTransform: 
 
+../include/dateTime.h
+string
+-
+ctime
+-
+regex
+-
+sstream
+-
+vector
+-
+unordered_map
+-
+exception.h
+../include/exception.h
+
 ../include/exception.h
 string
 -
@@ -14,15 +30,7 @@ iostream
 exception
 -
 
-../include/request.h
-string
--
-exception.h
-../include/exception.h
-sstream
--
-
-/home/ht175/HTTP_Workflow/src/request.cpp
-request.h
-/home/ht175/HTTP_Workflow/src/request.h
+/home/ht175/HTTP_Workflow/src/dateTime.cpp
+dateTime.h
+/home/ht175/HTTP_Workflow/src/dateTime.h
 

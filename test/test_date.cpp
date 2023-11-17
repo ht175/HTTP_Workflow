@@ -19,7 +19,7 @@ TEST(DateTimeTest, ConstructorWithPattern1) {
     DateTime dt(http_date);
     std::string result = dt.toString();
     // Check if the result matches the expected string
-    EXPECT_EQ(result, "Sun Nov 6 08:49:37 1994\n");
+    EXPECT_EQ(result, "Sun Nov  6 08:49:37 1994\n");
 }
 
 // Test the constructor with an invalid HTTP date string
@@ -34,7 +34,7 @@ TEST(DateTimeTest, ConstructorWithPattern2) {
     DateTime dt(http_date);
     
     std::string result = dt.toString();
-    EXPECT_EQ(result, "Sun Nov 6 08:49:37 1994\n");
+    EXPECT_EQ(result, "Sun Nov  6 08:49:37 1994\n");
     // You can add more checks here to validate the parsed time
 }
 
@@ -43,7 +43,7 @@ TEST(DateTimeTest, ConstructorWithPattern3) {
     DateTime dt(http_date);
     
     std::string result = dt.toString();
-    EXPECT_EQ(result, "Sun Nov 6 08:49:37 1994\n");
+    EXPECT_EQ(result, "Sun Nov  6 08:49:37 1994\n");
     // You can add more checks here to validate the parsed time
 }
 

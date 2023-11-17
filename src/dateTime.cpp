@@ -84,7 +84,7 @@ void DateTime::fillTimeInfo(const std::smatch& match_results,int pattern) {
             time_info.tm_wday = DateTimeConstants::weekdays.at(match_results[1]);
             time_info.tm_mon = DateTimeConstants::months.at(match_results[2]);
             time_info.tm_mday = std::stoi(match_results[3]);
-            std::sscanf(match_results[5].str().c_str(), "%d:%d:%d", &time_info.tm_hour, &time_info.tm_min, &time_info.tm_sec);
+            std::sscanf(match_results[4].str().c_str(), "%d:%d:%d", &time_info.tm_hour, &time_info.tm_min, &time_info.tm_sec);
             time_info.tm_year = std::stoi(match_results[5]) - 1900;
             break;
     }
